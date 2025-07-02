@@ -32,14 +32,15 @@ with st.form("patient_form"):
     adenopathy         = st.selectbox("Adenopathy", [
         "No", "Left", "Right", "Bilateral", "Posterior", "Extensive"])
     pathology          = st.selectbox("Pathology", [
-        "Papillary", "Follicular", "Hürthle", "Other"])
+        "Micropapillary", "Papillary", "Follicular", "Hurthel cell"])
     focality           = st.selectbox("Focality", ["Unifocal", "Multifocal"])
     risk               = st.selectbox("Risk", ["Low", "Intermediate", "High"])
-    tumor              = st.selectbox("Tumor (T)", ["T1", "T2", "T3", "T4"])
+    tumor              = st.selectbox("Tumor (T)", ["T1a", "T1b", "T2", "T3a", "T3b", "T4a", "T4b"])
     lymph_nodes        = st.selectbox("Nodes (N)", ["N0", "N1a", "N1b"])
     cancer_metastasis  = st.selectbox("Metastasis (M)", ["M0", "M1"])
     stage              = st.selectbox("Stage", ["I", "II", "III", "IVA", "IVB"])
-    treatment_response = st.selectbox("Treatment Response", ["Positive", "Stable", "Negative"])
+    treatment_response = st.selectbox("Treatment Response", [
+        "Indeterminate", "Excellent", "Structural Incomplete", "Biochemical Incomplete"])
 
     submitted = st.form_submit_button("Predict")
 
