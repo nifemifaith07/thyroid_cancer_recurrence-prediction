@@ -19,7 +19,7 @@ with st.form("patient_form"):
     st.subheader("Patient information")
     age  = st.number_input("Age", 1, 120, value=45)
 
-    gender             = st.selectbox("Gender", ["Male", "Female"])
+    gender             = st.selectbox("Gender", ["M", "F"])
     smoking            = st.selectbox("Smoking", ["No", "Yes"])
     hx_smoking         = st.selectbox("Hx Smoking", ["No", "Yes"])
     hx_radiothreapy    = st.selectbox("Hx Radiotherapy", ["No", "Yes"])
