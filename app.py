@@ -26,7 +26,7 @@ with st.form("patient_form"):
     thyroid_function   = st.selectbox("Thyroid Function", [
         "Euthyroid", "Clinical Hyperthyroidism", "Clinical Hypothyroidism",
         "Subclinical Hyperthyroidism", "Subclinical Hypothyroidism"])
-    physical_exam      = st.selectbox("Physical Examination", [
+    physical_examination      = st.selectbox("Physical Examination", [
         "Normal", "Single nodular goiter-left", "Single nodular goiter-right",
         "Multinodular goiter", "Diffuse goiter"])
     adenopathy         = st.selectbox("Adenopathy", [
